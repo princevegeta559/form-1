@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+
+  <body>
+    <form onsubmit="return validation()" action="form.html">
+      <label class="text-label" for="usname"> Username:</label>
+      <input name="usname" type="text" id="usname" />
+
+      <label class="text-label" for="email"> Email Address:</label>
+      <input name="email" type="text" id="email" />
+      <label class="text-label" for="pass"> Password:</label>
+      <input name="pass" type="password" />
+      <label class="text-label" for="conf-pass"> Confirm Password:</label>
+      <input name="conf-pass" type="password" />
+      <label class="radio-label" for="gender">
+        <div id="gender">Gender?</div>
+        <div class="radio-btns">
+          <input type="radio" name="gender" id="male" checked /><span
+            >Male</span
+          >
+          <input type="radio" name="gender" id="female" /><span>Female</span>
+        </div>
+      </label>
+      <label class="text-label" for="birth-day">
+        <span>When were you born?</span>
+        <input type="date" name="birth-day" id="" />
+      </label>
+      <label class="input-label" for="description">
+        <textarea name="description" id="description" cols="40" rows="10">
+Tell us more about yourself</textarea
+        >
+      </label>
+      <button id="sign-in-btn" type="submit">Sign up</button>
+    </form>
+  </body>
+  <script src="form.js"></script>
+</html>
